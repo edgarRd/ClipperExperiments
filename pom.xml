@@ -103,8 +103,8 @@
 		  				</executableDependency>
 						<mainClass>com.clarkparsia.rpi.clipper.ClipperRunner</mainClass>
 						<arguments>
-							<argument>/home/edgar/research/workshop.rpi/data/university/university.owl</argument>
-							<argument>/home/edgar/research/workshop.rpi/data/university/queries</argument>
+              <argument>data/university/university.owl</argument>
+							<argument>data/university/queries</argument>
 						</arguments>
 					</configuration>
 					<dependencies>
