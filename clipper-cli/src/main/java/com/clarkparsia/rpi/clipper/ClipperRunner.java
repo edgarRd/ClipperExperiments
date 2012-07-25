@@ -52,7 +52,7 @@ public class ClipperRunner {
 	private Map<File, File[]> processArguments(String[] args) {
 		File aOntoFile = null;
 		File[] aQueryFileSet = null;
-		String queryDir = args[1];
+		String queryDirStr = args[1];
 		Map<File, File[]> theFilesMap = new HashMap<File, File[]>();
 
 		if (args.length == 2) {
@@ -68,7 +68,7 @@ public class ClipperRunner {
 				}
 
 				// Get queries files
-				File queryDir = new File(queryDir);
+				File queryDir = new File(queryDirStr);
 
 				aQueryFileSet = queryDir.listFiles();
 				
@@ -88,42 +88,44 @@ public class ClipperRunner {
 		return theFilesMap;
 	}
 
-	public void runExperiment() {
+	public void run(int times) {
 		System.out.println("[- Running experiment -]");
 
-		for (Entry<File, File[]> entry : mFiles.entrySet()) {
-			Map<String, ClipperReport> theResultsMap = new HashMap<String, ClipperReport>();
-			File aOntoFile = entry.getKey();
-			File[] aQueryFiles = entry.getValue();
+		for (int i=0; i < times; i++) {
+			for (Entry<File, File[]> entry : mFiles.entrySet()) {
+				Map<String, ClipperReport> theResultsMap = new HashMap<String, ClipperReport>();
+				File aOntoFile = entry.getKey();
+				File[] aQueryFiles = entry.getValue();
 
-			for (File aQueryFile : aQueryFiles) {
-				System.out.println("Rewriting for query: " + aQueryFile.getName());
-				ClipperReport aReport = rewrite(aOntoFile, aQueryFile);
-				theResultsMap.put(aQueryFile.getName(), aReport);
-			}
-			
-			System.out.println("Ontology file: "+ aOntoFile.getName());
-			System.out.println("-------------------------------");
-			System.out.format("query\t\t\treasoning time\trewriting time\trewriting size\ttotal%n");
+				for (File aQueryFile : aQueryFiles) {
+					System.out.println("Rewriting for query: " + aQueryFile.getName());
+					ClipperReport aReport = rewrite(aOntoFile, aQueryFile);
+					theResultsMap.put(aQueryFile.getName(), aReport);
+				}
+				
+				System.out.println("Ontology file: "+ aOntoFile.getName());
+				System.out.println("-------------------------------");
+				System.out.format("query\t\t\treasoning time\trewriting time\trewriting size\ttotal%n");
 
-			for (Entry<String, ClipperReport> aResEntry : theResultsMap.entrySet()) {
-				String aQueryName = aResEntry.getKey();
-				ClipperReport aRes = aResEntry.getValue();
+				for (Entry<String, ClipperReport> aResEntry : theResultsMap.entrySet()) {
+					String aQueryName = aResEntry.getKey();
+					ClipperReport aRes = aResEntry.getValue();
 
-				long totalTime = aRes.getReasoningTime() + aRes.getQueryRewritingTime();
+					long totalTime = aRes.getReasoningTime() + aRes.getQueryRewritingTime();
 
-				System.out.println(aQueryName + "\t" +
-					aRes.getReasoningTime() + "\t\t" + 
-					aRes.getQueryRewritingTime() + "\t\t" +
-					aRes.getNumberOfRewrittenQueriesAndRules() +  + "\t\t" +
-					totalTime + "\n");
+					System.out.println(aQueryName + "\t" +
+						aRes.getReasoningTime() + "\t\t" + 
+						aRes.getQueryRewritingTime() + "\t\t" +
+						aRes.getNumberOfRewrittenQueriesAndRules() + "\t\t" +
+						totalTime + "\n");
+				}
 			}
 		}
 	}
 
 	public static void main(String[] args) {
 		ClipperRunner aRunner = new ClipperRunner(args);
-		aRunner.runExperiment();
+		aRunner.run(1);
 	}
 
 	private ClipperReport rewrite(File theOntologyFile, File theQueryFile) {
