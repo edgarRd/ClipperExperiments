@@ -103,8 +103,8 @@
 		  				</executableDependency>
 						<mainClass>com.clarkparsia.rpi.clipper.ClipperRunner</mainClass>
 						<arguments>
-              <argument>data/university/university.owl</argument>
-							<argument>data/university/queries</argument>
+						  <argument>data/lubm/ql/lubm10_wo_dt_ql.owl</argument>
+							<argument>data/lubm/c_queries</argument>
 						</arguments>
 					</configuration>
 					<dependencies>
