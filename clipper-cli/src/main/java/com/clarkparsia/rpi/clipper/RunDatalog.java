@@ -12,45 +12,35 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.antlr.runtime.RecognitionException;
-
-import org.semanticweb.clipper.hornshiq.queryanswering.QAHornSHIQ;
 import org.semanticweb.clipper.hornshiq.queryanswering.ClipperManager;
 import org.semanticweb.clipper.hornshiq.queryanswering.ClipperReport;
-import org.semanticweb.owlapi.model.OWLOntology;
-import org.semanticweb.clipper.hornshiq.rule.CQ;
+import org.semanticweb.clipper.hornshiq.queryanswering.QAHornSHIQ;
 import org.semanticweb.clipper.hornshiq.queryanswering.ReductionToDatalogOpt.NamingStrategy;
+import org.semanticweb.clipper.hornshiq.rule.Atom;
+import org.semanticweb.clipper.hornshiq.rule.CQ;
+import org.semanticweb.clipper.hornshiq.rule.DLPredicate;
+import org.semanticweb.clipper.hornshiq.rule.Variable;
 import org.semanticweb.clipper.hornshiq.sparql.SparqlParser;
+import org.semanticweb.clipper.util.SymbolEncoder;
+import org.semanticweb.clipper.hornshiq.cli.QueryResultPrinter;
+import org.semanticweb.clipper.hornshiq.cli.TableQueryResultPrinter;
+import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.model.IRI;
 
-public class ClipperRunner {
+public class RunDatalog {
 
-	private QAHornSHIQ mHornSHIQ;
-
-	private final String queryPrefix;
-	private String headPredicate;
-
-	private final String queryRewriter = "new";
-	private Collection<CQ> rewrittenQueries;
-
-	private int debugLevel;
-
+//    private static String getFullName(String prefixedName){
+//        String original = prefixedName.toString();
+//        int i = original.indexOf(":");
+//        String prefix = original.substring(0,i);
+//        String full = namespaces.get(prefix) + original.substring(i+1);
+//        return full;
+//      }
 	private Map<File, File[]> mFiles;
 
-	private OWLOntology mNormalizedOntology = null;
-
-	public ClipperRunner(String[] args) {
-		mHornSHIQ = new QAHornSHIQ();
-
-		queryPrefix = null;
+	public RunDatalog(String[] args) {
 
 		mFiles = processArguments(args);
-	}
-
-	public int getDebugLevel() {
-		return this.debugLevel;
-	}
-
-	public void setDebug(int theDebugLevel) {
-		this.debugLevel = theDebugLevel;
 	}
 
 	private Map<File, File[]> processArguments(String[] args) {
@@ -65,9 +55,9 @@ public class ClipperRunner {
 			System.out.println("args[1] --> "+ args[1]);
 
 			try {
-				aOntoFile = new File(args[0]);
+				aOntoFile = (args[0] != null) ? new File(args[0]) : null;
 
-				if (!aOntoFile.exists()) {
+				if (aOntoFile != null && !aOntoFile.exists()) {
 					throw new FileNotFoundException("File "+ args[0] + " was not found!");
 				}
 
@@ -92,6 +82,14 @@ public class ClipperRunner {
 		return theFilesMap;
 	}
 
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		RunDatalog aRunner = new RunDatalog(args);
+		aRunner.run(5, 10);
+	}
+
 	public void run(int warms, int times) {
 		System.out.println("[- Running experiment -]");
 		int totRuns = warms + times;
@@ -101,44 +99,36 @@ public class ClipperRunner {
 			for (Entry<File, File[]> entry : mFiles.entrySet()) {
 				theResultsMap = new HashMap<String, ClipperReport>();
 				File aOntoFile = entry.getKey();
-				File[] aQueryFiles = entry.getValue();
+				File[] aDatalogFiles = entry.getValue();
 
-				for (File aQueryFile : aQueryFiles) {
-					System.out.println("Rewriting for query: " + aQueryFile.getName());
+				for (File aDatalogFile : aDatalogFiles) {
+					System.out.println("Evaluating for datalog: " + aDatalogFile.getName());
 
-					ClipperReport aReport = query(aOntoFile.getAbsolutePath(), aQueryFile.getAbsolutePath());
-					//ClipperReport aReport = rewrite(aOntoFile, aQueryFile);
-					theResultsMap.put(aQueryFile.getName(), aReport);
+					ClipperReport aReport = evaluate(aDatalogFile.getAbsolutePath());
+					theResultsMap.put(aDatalogFile.getName(), aReport);
 				}
 				
 				if (i > totRuns - times) {
 					TimeReporter.getInstance().setActive(true);
 					System.out.println("Experiment: "+ (i-warms) +" #####################");
 
-					System.out.println("Ontology file: "+ aOntoFile.getName());
+					if (aOntoFile != null) {
+						System.out.println("Ontology file: "+ aOntoFile.getName());
+					}
 					System.out.println("-------------------------------");
-					System.out.format("query\t\trw size\treasoning time\trw time\ttot rw time\teval time%n");
+					System.out.format("query\t\teval time%n");
 
 					for (Entry<String, ClipperReport> aResEntry : theResultsMap.entrySet()) {
-						String aQueryName = aResEntry.getKey();
+						String aDatalogName = aResEntry.getKey();
 						ClipperReport aRes = aResEntry.getValue();
 
-						TimeReporter.getInstance().setCurrentQuery(aQueryName);
+						TimeReporter.getInstance().setCurrentQuery(aDatalogName);
 
-						long rwTime = aRes.getReasoningTime() + aRes.getQueryRewritingTime();
-						//long evalTime = aRes.getDatalogRunTime() + aRes.getOutputAnswerTime();
 						long evalTime = aRes.getDatalogRunTime();
-						int rwSize = aRes.getNumberOfRewrittenQueriesAndRules();
 
-						TimeReporter.getInstance().addRwTime(rwTime);
 						TimeReporter.getInstance().addEvalTime(evalTime);
-						TimeReporter.getInstance().setRwSize(rwSize);
 
-						System.out.format(aQueryName + "\t" +
-							aRes.getNumberOfRewrittenQueriesAndRules() + "\t"+
-							aRes.getReasoningTime() + "\t" + 
-							aRes.getQueryRewritingTime() + "\t" +
-							rwTime + "\t" +
+						System.out.format(aDatalogName + "\t\t" +
 							evalTime + "%n");
 					}
 				}
@@ -151,79 +141,18 @@ public class ClipperRunner {
 
 		System.out.println("\n\n");
 		System.out.println("Printing Experiment Summary");
-		System.out.format("query\trw size\ttot rw time\teval time%n");
+		System.out.format("query\teval time%n");
 		for (String qName : theResultsMap.keySet()) {
 			System.out.println("-----------------------------------------------------");
 			System.out.format(qName +"\t"+ 
-				TimeReporter.getInstance().getRwSize(qName) +"\t"+
-				TimeReporter.getInstance().getAverageRwTime(qName) +"\t"+
 				TimeReporter.getInstance().getAverageEvalTime(qName) + "%n"
 			);
 		}
 	}
 
-	public static void main(String[] args) {
-		ClipperRunner aRunner = new ClipperRunner(args);
-		aRunner.run(5, 10);
-	}
-
-	private ClipperReport rewrite(File theOntologyFile, File theQueryFile) {
-		System.setProperty("entityExpansionLimit", "512000");
-
-		SparqlParser sparqlParser = null;
-		try {
-			sparqlParser = new SparqlParser(theQueryFile.getAbsolutePath());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		CQ cq = null;
-		try {
-			cq = sparqlParser.query();
-		} catch (RecognitionException e) {
-			e.printStackTrace();
-		}
-
-		QAHornSHIQ qaHornSHIQ = new QAHornSHIQ();
-		// note that naming strategy shoud be set after create new QAHornSHIQ
-		ClipperManager.getInstance().setNamingStrategy(NamingStrategy.LowerCaseFragment);
-		ClipperManager.getInstance().setVerboseLevel(debugLevel);
-
-		String ontologyFileName = theOntologyFile.getAbsolutePath();
-		qaHornSHIQ.setOntologyName(ontologyFileName);
-
-		qaHornSHIQ.setDataLogName(ontologyFileName + ".dl");
-		qaHornSHIQ.setCq(cq);
-		qaHornSHIQ.setQueryRewriter("new");
-
-		qaHornSHIQ.computeClipperRewritings();
-		
-		// long totalTime = qaHornSHIQ.getClipperReport().getReasoningTime()
-		// 		+ qaHornSHIQ.getClipperReport().getQueryRewritingTime();
-		// System.out.println(qaHornSHIQ.getClipperReport().getNumberOfRewrittenQueries() + " "
-		// 		+ qaHornSHIQ.getClipperReport().getNumberOfRewrittenQueriesAndRules() + " " + totalTime);
-
-		return qaHornSHIQ.getClipperReport();
-	}
-
-	private ClipperReport query(String theOntoPath, String theQueryPath) {
-		ClipperManager.getInstance().setNamingStrategy(NamingStrategy.LowerCaseFragment);
-		System.setProperty("entityExpansionLimit", "512000");
-		String ontologyFileName = theOntoPath;
-		String sparqlFileName = theQueryPath;
-		SparqlParser sparqlParser = null;
-		try {
-			sparqlParser = new SparqlParser(sparqlFileName);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		CQ cq = null;
-		try {
-			cq = sparqlParser.query();
-		} catch (RecognitionException e) {
-			e.printStackTrace();
-		}
+	public ClipperReport evaluate(String theFilePath) {
+	
+		ClipperManager.getInstance().setVerboseLevel(0);
 
 		QAHornSHIQ qaHornSHIQ = new QAHornSHIQ();
 
@@ -232,35 +161,39 @@ public class ClipperRunner {
 //		String name = ontologyFile.getName();
 //		String string = Files.getFileExtension(ontologyFileName);
 //		
-		String sparqlName = new File(sparqlFileName).getName();
+//		String sparqlName = new File(sparqlFileName).getName();
 		
-		qaHornSHIQ.setOntologyName(ontologyFileName);
-		qaHornSHIQ.setDataLogName(ontologyFileName + "-" + sparqlName + ".dl");
-		qaHornSHIQ.setCq(cq);
+		//qaHornSHIQ.setOntologyName(theOntologyPath);
+//		qaHornSHIQ.setDataLogName(ontologyFileName + "-" + sparqlName + ".dl");
+		qaHornSHIQ.setDataLogName(theFilePath);
+		
+		
+//		qaHornSHIQ.setCq(cq);
 		qaHornSHIQ.setQueryRewriter("new");
 
 		qaHornSHIQ.setDlvPath("/usr/bin/dlv");
 
-		if (mNormalizedOntology != null) {
-			qaHornSHIQ.setNormalizedOntology(mNormalizedOntology);
-		}
-
 		long startTime = System.currentTimeMillis();
-		List<List<String>> answers = qaHornSHIQ.runDatalogEngine();
+		List<List<String>> answers = qaHornSHIQ.runDatalogEngineWithoutRewriting();
 		long endTime = System.currentTimeMillis();
 
-		mNormalizedOntology = qaHornSHIQ.getNormalizedOntology();
+		QueryResultPrinter printer = new TableQueryResultPrinter();//createQueryResultPrinter(cmd.getOutputFormat());
 
-		// QueryResultPrinter printer = createQueryResultPrinter(cmd.getOutputFormat());
+//		printer.print(cq.getHead(), answers);
 
-		// printer.print(cq.getHead(), answers);
-
-		statistics(qaHornSHIQ.getClipperReport(), startTime, endTime);
+		if (ClipperManager.getInstance().getVerboseLevel() > 0) {
+			statistics(qaHornSHIQ.getClipperReport(), startTime, endTime);
+		}
 
 		return qaHornSHIQ.getClipperReport();
 	}
 
-	private void statistics(ClipperReport clipperReport, long startTime, long endTime) {
+	/**
+	 * @param qaHornSHIQ
+	 * @param startTime
+	 * @param endTime
+	 */
+	private static void statistics(ClipperReport clipperReport, long startTime, long endTime) {
 		System.out.println("Ontology parsing and normalization time:                      "
 				+ clipperReport.getNormalizationTime() + "  milliseconds");
 		System.out.println("Reasoning time:                                               "

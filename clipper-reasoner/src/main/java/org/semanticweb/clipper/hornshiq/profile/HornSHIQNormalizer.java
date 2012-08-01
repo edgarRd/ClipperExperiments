@@ -489,7 +489,8 @@ public class HornSHIQNormalizer implements OWLAxiomVisitorEx<Object> {
 
 	@Override
 	public Object visit(OWLNegativeDataPropertyAssertionAxiom axiom) {
-		throw new IllegalArgumentException(axiom.toString());
+		//throw new IllegalArgumentException(axiom.toString());
+		return null;
 	}
 
 	@Override
@@ -615,7 +616,8 @@ public class HornSHIQNormalizer implements OWLAxiomVisitorEx<Object> {
 	@Override
 	public Object visit(OWLDataPropertyAssertionAxiom axiom) {
 
-		throw new IllegalArgumentException(axiom.toString());
+		//throw new IllegalArgumentException(axiom.toString());
+		return null;
 
 	}
 

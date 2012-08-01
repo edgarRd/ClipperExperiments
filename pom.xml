@@ -101,10 +101,13 @@
 							<groupId>org.semanticweb.clipper</groupId>
 							<artifactId>clipper-cli</artifactId>
 		  				</executableDependency>
-						<mainClass>com.clarkparsia.rpi.clipper.ClipperRunner</mainClass>
+						<!--<mainClass>com.clarkparsia.rpi.clipper.ClipperRunner</mainClass>-->
+						<mainClass>com.clarkparsia.rpi.clipper.RunDatalog</mainClass>
 						<arguments>
-						  <argument>data/lubm/ql/lubm10_wo_dt_ql.owl</argument>
-							<argument>data/lubm/c_queries</argument>
+							<!--<argument>/data/lubm/ql/lubm1_ql.owl</argument>
+							<argument>/data/lubm/c_queries</argument>-->
+							<argument></argument>
+							<argument>/data/datalog/lubm1/el</argument>
 						</arguments>
 					</configuration>
 					<dependencies>
