@@ -1,0 +1,445 @@
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Command Line Interface
+[INFO]    task-segment: [exec:java]
+[INFO] ------------------------------------------------------------------------
+[INFO] Preparing exec:java
+[INFO] No goals needed for project - skipping
+[INFO] [exec:java {execution: default-cli}]
+args[0] --> /data/lubm/ql/lubmSchema_ql.owl
+args[1] --> /data/lubm/c_queries
+[- Running experiment -]
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Warmup: 1 Finished #####################
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Warmup: 2 Finished #####################
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Warmup: 3 Finished #####################
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Warmup: 4 Finished #####################
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Warmup: 5 Finished #####################
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Experiment: 1 #####################
+Ontology file: lubmSchema_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	1	0	1	0
+q6.sparql	5	0	0	0	0
+q11.sparql	2	0	0	0	0
+q14.sparql	1	1	0	1	0
+q9.sparql	22	1	0	1	0
+q3.sparql	17	0	1	1	0
+q2.sparql	16	1	0	1	0
+q10.sparql	5	0	1	1	0
+q7.sparql	10	1	0	1	0
+q1.sparql	1	1	0	1	0
+q8.sparql	9	1	0	1	0
+q5.sparql	23	1	0	1	0
+q13.sparql	22	1	0	1	0
+q12.sparql	2	0	0	0	0
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Experiment: 2 #####################
+Ontology file: lubmSchema_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	1	0	1	0
+q6.sparql	5	1	0	1	0
+q11.sparql	2	1	0	1	0
+q14.sparql	1	1	0	1	0
+q9.sparql	22	1	0	1	0
+q3.sparql	17	0	0	0	0
+q2.sparql	16	1	0	1	0
+q10.sparql	5	0	1	1	0
+q7.sparql	10	1	0	1	0
+q1.sparql	1	0	1	1	0
+q8.sparql	9	1	0	1	0
+q5.sparql	23	0	0	0	0
+q13.sparql	22	0	0	0	0
+q12.sparql	2	0	0	0	0
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Experiment: 3 #####################
+Ontology file: lubmSchema_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	1	0	1	0
+q6.sparql	5	0	0	0	0
+q11.sparql	2	1	0	1	0
+q14.sparql	1	0	0	0	0
+q9.sparql	22	0	0	0	0
+q3.sparql	17	1	0	1	0
+q2.sparql	16	1	0	1	0
+q10.sparql	5	1	0	1	0
+q7.sparql	10	1	0	1	0
+q1.sparql	1	1	0	1	0
+q8.sparql	9	1	0	1	0
+q5.sparql	23	0	0	0	0
+q13.sparql	22	0	0	0	0
+q12.sparql	2	1	0	1	0
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Experiment: 4 #####################
+Ontology file: lubmSchema_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	1	1	2	0
+q6.sparql	5	0	0	0	0
+q11.sparql	2	1	0	1	0
+q14.sparql	1	0	0	0	0
+q9.sparql	22	1	0	1	0
+q3.sparql	17	1	0	1	0
+q2.sparql	16	1	0	1	0
+q10.sparql	5	1	0	1	0
+q7.sparql	10	0	0	0	0
+q1.sparql	1	1	0	1	0
+q8.sparql	9	1	0	1	0
+q5.sparql	23	1	0	1	0
+q13.sparql	22	0	0	0	0
+q12.sparql	2	0	0	0	0
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Experiment: 5 #####################
+Ontology file: lubmSchema_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	1	0	1	0
+q6.sparql	5	1	0	1	0
+q11.sparql	2	1	0	1	0
+q14.sparql	1	0	0	0	0
+q9.sparql	22	0	0	0	0
+q3.sparql	17	0	0	0	0
+q2.sparql	16	1	0	1	0
+q10.sparql	5	0	1	1	0
+q7.sparql	10	1	0	1	0
+q1.sparql	1	1	0	1	0
+q8.sparql	9	0	0	0	0
+q5.sparql	23	1	0	1	0
+q13.sparql	22	1	0	1	0
+q12.sparql	2	1	0	1	0
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Experiment: 6 #####################
+Ontology file: lubmSchema_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	0	0	0	0
+q6.sparql	5	1	0	1	0
+q11.sparql	2	1	0	1	0
+q14.sparql	1	0	0	0	0
+q9.sparql	22	1	0	1	0
+q3.sparql	17	1	0	1	0
+q2.sparql	16	0	1	1	0
+q10.sparql	5	1	0	1	0
+q7.sparql	10	1	0	1	0
+q1.sparql	1	1	0	1	0
+q8.sparql	9	0	0	0	0
+q5.sparql	23	0	1	1	0
+q13.sparql	22	0	0	0	0
+q12.sparql	2	1	0	1	0
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Experiment: 7 #####################
+Ontology file: lubmSchema_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	1	0	1	0
+q6.sparql	5	1	0	1	0
+q11.sparql	2	0	0	0	0
+q14.sparql	1	0	0	0	0
+q9.sparql	22	1	0	1	0
+q3.sparql	17	0	0	0	0
+q2.sparql	16	1	0	1	0
+q10.sparql	5	0	0	0	0
+q7.sparql	10	0	0	0	0
+q1.sparql	1	1	0	1	0
+q8.sparql	9	1	0	1	0
+q5.sparql	23	0	0	0	0
+q13.sparql	22	0	0	0	0
+q12.sparql	2	1	0	1	0
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Experiment: 8 #####################
+Ontology file: lubmSchema_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	0	0	0	0
+q6.sparql	5	0	0	0	0
+q11.sparql	2	0	0	0	0
+q14.sparql	1	1	0	1	0
+q9.sparql	22	1	0	1	0
+q3.sparql	17	1	0	1	0
+q2.sparql	16	1	0	1	0
+q10.sparql	5	1	0	1	0
+q7.sparql	10	1	0	1	0
+q1.sparql	1	0	0	0	0
+q8.sparql	9	1	0	1	0
+q5.sparql	23	0	1	1	0
+q13.sparql	22	0	0	0	0
+q12.sparql	2	1	0	1	0
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Experiment: 9 #####################
+Ontology file: lubmSchema_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	0	0	0	0
+q6.sparql	5	0	0	0	0
+q11.sparql	2	1	0	1	0
+q14.sparql	1	1	0	1	0
+q9.sparql	22	0	0	0	0
+q3.sparql	17	1	0	1	0
+q2.sparql	16	0	0	0	0
+q10.sparql	5	1	0	1	0
+q7.sparql	10	0	0	0	0
+q1.sparql	1	0	0	0	0
+q8.sparql	9	1	0	1	0
+q5.sparql	23	1	0	1	0
+q13.sparql	22	0	0	0	0
+q12.sparql	2	0	0	0	0
+Rewriting for query: q1.sparql
+Rewriting for query: q10.sparql
+Rewriting for query: q11.sparql
+Rewriting for query: q12.sparql
+Rewriting for query: q13.sparql
+Rewriting for query: q14.sparql
+Rewriting for query: q2.sparql
+Rewriting for query: q3.sparql
+Rewriting for query: q4.sparql
+Rewriting for query: q5.sparql
+Rewriting for query: q6.sparql
+Rewriting for query: q7.sparql
+Rewriting for query: q8.sparql
+Rewriting for query: q9.sparql
+Experiment: 10 #####################
+Ontology file: lubmSchema_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	0	0	0	0
+q6.sparql	5	1	0	1	0
+q11.sparql	2	0	0	0	0
+q14.sparql	1	1	0	1	0
+q9.sparql	22	1	0	1	0
+q3.sparql	17	0	0	0	0
+q2.sparql	16	0	1	1	0
+q10.sparql	5	0	0	0	0
+q7.sparql	10	1	0	1	0
+q1.sparql	1	0	0	0	0
+q8.sparql	9	0	1	1	0
+q5.sparql	23	0	0	0	0
+q13.sparql	22	0	0	0	0
+q12.sparql	2	0	0	0	0
+
+
+
+Printing Experiment Summary
+query	rw size	tot rw time	eval time
+-----------------------------------------------------
+q4.sparql	10	0.7	0.0
+-----------------------------------------------------
+q6.sparql	5	0.5	0.0
+-----------------------------------------------------
+q11.sparql	2	0.6	0.0
+-----------------------------------------------------
+q14.sparql	1	0.5	0.0
+-----------------------------------------------------
+q9.sparql	22	0.7	0.0
+-----------------------------------------------------
+q3.sparql	17	0.6	0.0
+-----------------------------------------------------
+q2.sparql	16	0.9	0.0
+-----------------------------------------------------
+q10.sparql	5	0.8	0.0
+-----------------------------------------------------
+q7.sparql	10	0.7	0.0
+-----------------------------------------------------
+q1.sparql	1	0.7	0.0
+-----------------------------------------------------
+q8.sparql	9	0.8	0.0
+-----------------------------------------------------
+q5.sparql	23	0.6	0.0
+-----------------------------------------------------
+q13.sparql	22	0.2	0.0
+-----------------------------------------------------
+q12.sparql	2	0.5	0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5 seconds
+[INFO] Finished at: Wed Aug 01 11:53:37 EDT 2012
+[INFO] Final Memory: 23M/596M
+[INFO] ------------------------------------------------------------------------

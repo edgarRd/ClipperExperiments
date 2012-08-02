@@ -1,0 +1,741 @@
+[INFO] Scanning for projects...
+[INFO] Reactor build order: 
+[INFO]   clipper
+[INFO]   Clipper Reasoner
+[INFO]   Clipper Command Line Interface
+[INFO]   Clipper Distribution
+[INFO] ------------------------------------------------------------------------
+[INFO] Building clipper
+[INFO]    task-segment: [clean]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Reasoner
+[INFO]    task-segment: [clean]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] Deleting file set: /home/edgar/research/workshop.rpi/software/clipper-src/clipper-reasoner/target (included: [**], excluded: [])
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Command Line Interface
+[INFO]    task-segment: [clean]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] Deleting file set: /home/edgar/research/workshop.rpi/software/clipper-src/clipper-cli/target (included: [**], excluded: [])
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Distribution
+[INFO]    task-segment: [clean]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] Deleting file set: /home/edgar/research/workshop.rpi/software/clipper-src/clipper-distribution/target (included: [**], excluded: [])
+[INFO] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] ------------------------------------------------------------------------
+[INFO] clipper ............................................... SUCCESS [0.419s]
+[INFO] Clipper Reasoner ...................................... SUCCESS [0.093s]
+[INFO] Clipper Command Line Interface ........................ SUCCESS [0.061s]
+[INFO] Clipper Distribution .................................. SUCCESS [0.092s]
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: < 1 second
+[INFO] Finished at: Thu Aug 02 11:57:44 EDT 2012
+[INFO] Final Memory: 8M/151M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] Reactor build order: 
+[INFO]   clipper
+[INFO]   Clipper Reasoner
+[INFO]   Clipper Command Line Interface
+[INFO]   Clipper Distribution
+[INFO] ------------------------------------------------------------------------
+[INFO] Building clipper
+[INFO]    task-segment: [install]
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] [install:install {execution: default-install}]
+[INFO] Installing /home/edgar/research/workshop.rpi/software/clipper-src/pom.xml to /home/edgar/.m2/repository/org/semanticweb/clipper/clipper-parent/0.2-SNAPSHOT/clipper-parent-0.2-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Reasoner
+[INFO]    task-segment: [install]
+[INFO] ------------------------------------------------------------------------
+[INFO] [antlr3:antlr {execution: default}]
+[INFO] ANTLR: Processing source directory /home/edgar/research/workshop.rpi/software/clipper-src/clipper-reasoner/src/main/antlr3
+org/semanticweb/clipper/dllog/DLLog.g
+org/semanticweb/clipper/hornshiq/sparql/Sparql.g
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Compiling 78 source files to /home/edgar/research/workshop.rpi/software/clipper-src/clipper-reasoner/target/classes
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] Not compiling test sources
+[INFO] [surefire:test {execution: default-test}]
+[INFO] Tests are skipped.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] Building jar: /home/edgar/research/workshop.rpi/software/clipper-src/clipper-reasoner/target/clipper-reasoner-0.2-SNAPSHOT.jar
+[INFO] [install:install {execution: default-install}]
+[INFO] Installing /home/edgar/research/workshop.rpi/software/clipper-src/clipper-reasoner/target/clipper-reasoner-0.2-SNAPSHOT.jar to /home/edgar/.m2/repository/org/semanticweb/clipper/clipper-reasoner/0.2-SNAPSHOT/clipper-reasoner-0.2-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Command Line Interface
+[INFO]    task-segment: [install]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Compiling 18 source files to /home/edgar/research/workshop.rpi/software/clipper-src/clipper-cli/target/classes
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] Not compiling test sources
+[INFO] [surefire:test {execution: default-test}]
+[INFO] Tests are skipped.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] Building jar: /home/edgar/research/workshop.rpi/software/clipper-src/clipper-cli/target/clipper-cli-0.2-SNAPSHOT.jar
+[INFO] [install:install {execution: default-install}]
+[INFO] Installing /home/edgar/research/workshop.rpi/software/clipper-src/clipper-cli/target/clipper-cli-0.2-SNAPSHOT.jar to /home/edgar/.m2/repository/org/semanticweb/clipper/clipper-cli/0.2-SNAPSHOT/clipper-cli-0.2-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Distribution
+[INFO]    task-segment: [install]
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] [install:install {execution: default-install}]
+[INFO] Installing /home/edgar/research/workshop.rpi/software/clipper-src/clipper-distribution/pom.xml to /home/edgar/.m2/repository/org/semanticweb/clipper/clipper-distribution/0.2-SNAPSHOT/clipper-distribution-0.2-SNAPSHOT.pom
+[INFO] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] ------------------------------------------------------------------------
+[INFO] clipper ............................................... SUCCESS [1.296s]
+[INFO] Clipper Reasoner ...................................... SUCCESS [7.484s]
+[INFO] Clipper Command Line Interface ........................ SUCCESS [1.452s]
+[INFO] Clipper Distribution .................................. SUCCESS [0.050s]
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10 seconds
+[INFO] Finished at: Thu Aug 02 11:57:55 EDT 2012
+[INFO] Final Memory: 61M/604M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Distribution
+[INFO]    task-segment: [assembly:assembly] (aggregator-style)
+[INFO] ------------------------------------------------------------------------
+[INFO] Preparing assembly:assembly
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Distribution
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] [assembly:assembly {execution: default-cli}]
+[INFO] Reading assembly descriptor: src/main/assembly/assembly.xml
+[INFO] Building zip: /home/edgar/research/workshop.rpi/software/clipper-src/clipper-distribution/target/clipper-bin.zip
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3 seconds
+[INFO] Finished at: Thu Aug 02 11:58:00 EDT 2012
+[INFO] Final Memory: 31M/588M
+[INFO] ------------------------------------------------------------------------
+Archive:  target/clipper-bin.zip
+   creating: target/clipper/
+  inflating: target/clipper/set_path.sh  
+  inflating: target/clipper/clipper.sh  
+   creating: target/clipper/lib/
+  inflating: target/clipper/lib/clipper-reasoner-0.2-SNAPSHOT.jar  
+  inflating: target/clipper/lib/owlapi-3.2.4.jar  
+  inflating: target/clipper/lib/DLVWrapper-4.2.jar  
+  inflating: target/clipper/lib/trove4j-3.0.2.jar  
+  inflating: target/clipper/lib/antlr-runtime-3.4.jar  
+  inflating: target/clipper/lib/stringtemplate-3.2.1.jar  
+  inflating: target/clipper/lib/antlr-2.7.7.jar  
+  inflating: target/clipper/lib/jung2-2.0.1.pom  
+  inflating: target/clipper/lib/jung-graph-impl-2.0.1.jar  
+  inflating: target/clipper/lib/jung-api-2.0.1.jar  
+  inflating: target/clipper/lib/collections-generic-4.01.jar  
+  inflating: target/clipper/lib/sli4j-slf4j-log4j-2.0.jar  
+  inflating: target/clipper/lib/sli4j-core-2.0.jar  
+  inflating: target/clipper/lib/guice-2.0.jar  
+  inflating: target/clipper/lib/aopalliance-1.0.jar  
+  inflating: target/clipper/lib/slf4j-api-1.5.10.jar  
+  inflating: target/clipper/lib/slf4j-log4j12-1.5.10.jar  
+  inflating: target/clipper/lib/log4j-1.2.14.jar  
+  inflating: target/clipper/lib/jung-algorithms-2.0.1.jar  
+  inflating: target/clipper/lib/colt-1.2.0.jar  
+  inflating: target/clipper/lib/concurrent-1.3.4.jar  
+  inflating: target/clipper/lib/guava-12.0.jar  
+  inflating: target/clipper/lib/jsr305-1.3.9.jar  
+  inflating: target/clipper/lib/lombok-0.11.0.jar  
+  inflating: target/clipper/lib/clipper-cli-0.2-SNAPSHOT.jar  
+  inflating: target/clipper/lib/jcommander-1.26.jar  
+[INFO] Scanning for projects...
+[INFO] Searching repository for plugin with prefix: 'exec'.
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Command Line Interface
+[INFO]    task-segment: [exec:java]
+[INFO] ------------------------------------------------------------------------
+[INFO] Preparing exec:java
+[INFO] No goals needed for project - skipping
+[INFO] [exec:java {execution: default-cli}]
+args[0] --> null
+args[1] --> /data/datalog/v2/lubm1/ql
+[- Running experiment -]
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Warmup: 1 Finished #####################
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Warmup: 2 Finished #####################
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Warmup: 3 Finished #####################
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Warmup: 4 Finished #####################
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Warmup: 5 Finished #####################
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Experiment: 1 #####################
+-------------------------------
+query		eval time
+q7.dl		1
+q2.dl		2
+q13.dl		2
+q9.dl		1
+q5.dl		1
+q11.dl		1
+q3.dl		2
+q14.dl		1
+q6.dl		1
+q7.dl~		2
+q1.dl		0
+q10.dl		1
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Experiment: 2 #####################
+-------------------------------
+query		eval time
+q7.dl		1
+q2.dl		1
+q13.dl		1
+q9.dl		1
+q5.dl		1
+q11.dl		2
+q3.dl		1
+q14.dl		2
+q6.dl		2
+q7.dl~		2
+q1.dl		2
+q10.dl		1
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Experiment: 3 #####################
+-------------------------------
+query		eval time
+q7.dl		1
+q2.dl		1
+q13.dl		2
+q9.dl		2
+q5.dl		2
+q11.dl		1
+q3.dl		1
+q14.dl		2
+q6.dl		2
+q7.dl~		0
+q1.dl		1
+q10.dl		1
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Experiment: 4 #####################
+-------------------------------
+query		eval time
+q7.dl		2
+q2.dl		1
+q13.dl		1
+q9.dl		2
+q5.dl		2
+q11.dl		1
+q3.dl		2
+q14.dl		1
+q6.dl		2
+q7.dl~		1
+q1.dl		1
+q10.dl		2
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Experiment: 5 #####################
+-------------------------------
+query		eval time
+q7.dl		1
+q2.dl		2
+q13.dl		1
+q9.dl		2
+q5.dl		2
+q11.dl		1
+q3.dl		1
+q14.dl		1
+q6.dl		1
+q7.dl~		2
+q1.dl		1
+q10.dl		1
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Experiment: 6 #####################
+-------------------------------
+query		eval time
+q7.dl		4
+q2.dl		1
+q13.dl		2
+q9.dl		2
+q5.dl		1
+q11.dl		2
+q3.dl		2
+q14.dl		2
+q6.dl		2
+q7.dl~		1
+q1.dl		1
+q10.dl		1
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Experiment: 7 #####################
+-------------------------------
+query		eval time
+q7.dl		1
+q2.dl		1
+q13.dl		2
+q9.dl		1
+q5.dl		3
+q11.dl		1
+q3.dl		1
+q14.dl		2
+q6.dl		1
+q7.dl~		2
+q1.dl		1
+q10.dl		2
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Experiment: 8 #####################
+-------------------------------
+query		eval time
+q7.dl		1
+q2.dl		1
+q13.dl		1
+q9.dl		1
+q5.dl		2
+q11.dl		1
+q3.dl		0
+q14.dl		3
+q6.dl		1
+q7.dl~		1
+q1.dl		1
+q10.dl		1
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Experiment: 9 #####################
+-------------------------------
+query		eval time
+q7.dl		1
+q2.dl		1
+q13.dl		1
+q9.dl		1
+q5.dl		2
+q11.dl		1
+q3.dl		1
+q14.dl		2
+q6.dl		2
+q7.dl~		2
+q1.dl		1
+q10.dl		1
+Evaluating for datalog: q1.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q10.dl
+-------------> SIZE OF THE OUTPUT:4
+Evaluating for datalog: q11.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q13.dl
+-------------> SIZE OF THE OUTPUT:1
+Evaluating for datalog: q14.dl
+-------------> SIZE OF THE OUTPUT:5916
+Evaluating for datalog: q2.dl
+-------------> SIZE OF THE OUTPUT:0
+Evaluating for datalog: q3.dl
+-------------> SIZE OF THE OUTPUT:6
+Evaluating for datalog: q5.dl
+-------------> SIZE OF THE OUTPUT:719
+Evaluating for datalog: q6.dl
+-------------> SIZE OF THE OUTPUT:7790
+Evaluating for datalog: q7.dl
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q7.dl~
+-------------> SIZE OF THE OUTPUT:67
+Evaluating for datalog: q9.dl
+-------------> SIZE OF THE OUTPUT:208
+Experiment: 10 #####################
+-------------------------------
+query		eval time
+q7.dl		2
+q2.dl		1
+q13.dl		1
+q9.dl		1
+q5.dl		2
+q11.dl		1
+q3.dl		1
+q14.dl		2
+q6.dl		1
+q7.dl~		1
+q1.dl		1
+q10.dl		1
+
+
+
+Printing Experiment Summary
+query	eval time
+-----------------------------------------------------
+q7.dl	1.5
+-----------------------------------------------------
+q2.dl	1.2
+-----------------------------------------------------
+q13.dl	1.4
+-----------------------------------------------------
+q9.dl	1.4
+-----------------------------------------------------
+q5.dl	1.8
+-----------------------------------------------------
+q11.dl	1.2
+-----------------------------------------------------
+q3.dl	1.2
+-----------------------------------------------------
+q14.dl	1.8
+-----------------------------------------------------
+q6.dl	1.5
+-----------------------------------------------------
+q7.dl~	1.4
+-----------------------------------------------------
+q1.dl	1.0
+-----------------------------------------------------
+q10.dl	1.2
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1 minute 9 seconds
+[INFO] Finished at: Thu Aug 02 11:59:09 EDT 2012
+[INFO] Final Memory: 12M/591M
+[INFO] ------------------------------------------------------------------------

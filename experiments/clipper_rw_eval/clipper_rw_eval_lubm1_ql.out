@@ -1,0 +1,2725 @@
+[INFO] Scanning for projects...
+[INFO] Reactor build order: 
+[INFO]   clipper
+[INFO]   Clipper Reasoner
+[INFO]   Clipper Command Line Interface
+[INFO]   Clipper Distribution
+[INFO] ------------------------------------------------------------------------
+[INFO] Building clipper
+[INFO]    task-segment: [clean]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Reasoner
+[INFO]    task-segment: [clean]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] Deleting file set: /home/edgar/research/workshop.rpi/software/clipper-src/clipper-reasoner/target (included: [**], excluded: [])
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Command Line Interface
+[INFO]    task-segment: [clean]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] Deleting file set: /home/edgar/research/workshop.rpi/software/clipper-src/clipper-cli/target (included: [**], excluded: [])
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Distribution
+[INFO]    task-segment: [clean]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] Deleting file set: /home/edgar/research/workshop.rpi/software/clipper-src/clipper-distribution/target (included: [**], excluded: [])
+[INFO] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] ------------------------------------------------------------------------
+[INFO] clipper ............................................... SUCCESS [0.431s]
+[INFO] Clipper Reasoner ...................................... SUCCESS [0.102s]
+[INFO] Clipper Command Line Interface ........................ SUCCESS [0.060s]
+[INFO] Clipper Distribution .................................. SUCCESS [0.099s]
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: < 1 second
+[INFO] Finished at: Tue Jul 31 17:30:29 EDT 2012
+[INFO] Final Memory: 8M/151M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] Reactor build order: 
+[INFO]   clipper
+[INFO]   Clipper Reasoner
+[INFO]   Clipper Command Line Interface
+[INFO]   Clipper Distribution
+[INFO] ------------------------------------------------------------------------
+[INFO] Building clipper
+[INFO]    task-segment: [install]
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] [install:install {execution: default-install}]
+[INFO] Installing /home/edgar/research/workshop.rpi/software/clipper-src/pom.xml to /home/edgar/.m2/repository/org/semanticweb/clipper/clipper-parent/0.2-SNAPSHOT/clipper-parent-0.2-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Reasoner
+[INFO]    task-segment: [install]
+[INFO] ------------------------------------------------------------------------
+[INFO] [antlr3:antlr {execution: default}]
+[INFO] ANTLR: Processing source directory /home/edgar/research/workshop.rpi/software/clipper-src/clipper-reasoner/src/main/antlr3
+org/semanticweb/clipper/dllog/DLLog.g
+org/semanticweb/clipper/hornshiq/sparql/Sparql.g
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Compiling 78 source files to /home/edgar/research/workshop.rpi/software/clipper-src/clipper-reasoner/target/classes
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] Not compiling test sources
+[INFO] [surefire:test {execution: default-test}]
+[INFO] Tests are skipped.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] Building jar: /home/edgar/research/workshop.rpi/software/clipper-src/clipper-reasoner/target/clipper-reasoner-0.2-SNAPSHOT.jar
+[INFO] [install:install {execution: default-install}]
+[INFO] Installing /home/edgar/research/workshop.rpi/software/clipper-src/clipper-reasoner/target/clipper-reasoner-0.2-SNAPSHOT.jar to /home/edgar/.m2/repository/org/semanticweb/clipper/clipper-reasoner/0.2-SNAPSHOT/clipper-reasoner-0.2-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Command Line Interface
+[INFO]    task-segment: [install]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Compiling 16 source files to /home/edgar/research/workshop.rpi/software/clipper-src/clipper-cli/target/classes
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] Not compiling test sources
+[INFO] [surefire:test {execution: default-test}]
+[INFO] Tests are skipped.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] Building jar: /home/edgar/research/workshop.rpi/software/clipper-src/clipper-cli/target/clipper-cli-0.2-SNAPSHOT.jar
+[INFO] [install:install {execution: default-install}]
+[INFO] Installing /home/edgar/research/workshop.rpi/software/clipper-src/clipper-cli/target/clipper-cli-0.2-SNAPSHOT.jar to /home/edgar/.m2/repository/org/semanticweb/clipper/clipper-cli/0.2-SNAPSHOT/clipper-cli-0.2-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Distribution
+[INFO]    task-segment: [install]
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] [install:install {execution: default-install}]
+[INFO] Installing /home/edgar/research/workshop.rpi/software/clipper-src/clipper-distribution/pom.xml to /home/edgar/.m2/repository/org/semanticweb/clipper/clipper-distribution/0.2-SNAPSHOT/clipper-distribution-0.2-SNAPSHOT.pom
+[INFO] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] ------------------------------------------------------------------------
+[INFO] clipper ............................................... SUCCESS [1.275s]
+[INFO] Clipper Reasoner ...................................... SUCCESS [7.362s]
+[INFO] Clipper Command Line Interface ........................ SUCCESS [1.391s]
+[INFO] Clipper Distribution .................................. SUCCESS [0.041s]
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10 seconds
+[INFO] Finished at: Tue Jul 31 17:30:40 EDT 2012
+[INFO] Final Memory: 58M/480M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Distribution
+[INFO]    task-segment: [assembly:assembly] (aggregator-style)
+[INFO] ------------------------------------------------------------------------
+[INFO] Preparing assembly:assembly
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Distribution
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] [assembly:assembly {execution: default-cli}]
+[INFO] Reading assembly descriptor: src/main/assembly/assembly.xml
+[INFO] Building zip: /home/edgar/research/workshop.rpi/software/clipper-src/clipper-distribution/target/clipper-bin.zip
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3 seconds
+[INFO] Finished at: Tue Jul 31 17:30:45 EDT 2012
+[INFO] Final Memory: 32M/589M
+[INFO] ------------------------------------------------------------------------
+Archive:  target/clipper-bin.zip
+   creating: target/clipper/
+  inflating: target/clipper/set_path.sh  
+  inflating: target/clipper/clipper.sh  
+   creating: target/clipper/lib/
+  inflating: target/clipper/lib/clipper-reasoner-0.2-SNAPSHOT.jar  
+  inflating: target/clipper/lib/owlapi-3.2.4.jar  
+  inflating: target/clipper/lib/DLVWrapper-4.2.jar  
+  inflating: target/clipper/lib/trove4j-3.0.2.jar  
+  inflating: target/clipper/lib/antlr-runtime-3.4.jar  
+  inflating: target/clipper/lib/stringtemplate-3.2.1.jar  
+  inflating: target/clipper/lib/antlr-2.7.7.jar  
+  inflating: target/clipper/lib/jung2-2.0.1.pom  
+  inflating: target/clipper/lib/jung-graph-impl-2.0.1.jar  
+  inflating: target/clipper/lib/jung-api-2.0.1.jar  
+  inflating: target/clipper/lib/collections-generic-4.01.jar  
+  inflating: target/clipper/lib/sli4j-slf4j-log4j-2.0.jar  
+  inflating: target/clipper/lib/sli4j-core-2.0.jar  
+  inflating: target/clipper/lib/guice-2.0.jar  
+  inflating: target/clipper/lib/aopalliance-1.0.jar  
+  inflating: target/clipper/lib/slf4j-api-1.5.10.jar  
+  inflating: target/clipper/lib/slf4j-log4j12-1.5.10.jar  
+  inflating: target/clipper/lib/log4j-1.2.14.jar  
+  inflating: target/clipper/lib/jung-algorithms-2.0.1.jar  
+  inflating: target/clipper/lib/colt-1.2.0.jar  
+  inflating: target/clipper/lib/concurrent-1.3.4.jar  
+  inflating: target/clipper/lib/guava-12.0.jar  
+  inflating: target/clipper/lib/jsr305-1.3.9.jar  
+  inflating: target/clipper/lib/lombok-0.11.0.jar  
+  inflating: target/clipper/lib/clipper-cli-0.2-SNAPSHOT.jar  
+  inflating: target/clipper/lib/jcommander-1.26.jar  
+[INFO] Scanning for projects...
+[INFO] Searching repository for plugin with prefix: 'exec'.
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Clipper Command Line Interface
+[INFO]    task-segment: [exec:java]
+[INFO] ------------------------------------------------------------------------
+[INFO] Preparing exec:java
+[INFO] No goals needed for project - skipping
+[INFO] [exec:java {execution: default-cli}]
+args[0] --> /data/lubm/ql/lubm1_ql.owl
+args[1] --> /data/lubm/c_queries
+[- Running experiment -]
+Rewriting for query: q1.sparql
+Computing Ontology normalization...
+Ontology parsing and normalization time:                      7816  milliseconds
+Reasoning time:                                               5  milliseconds
+Query rewriting time:                                         15  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  20  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     6  milliseconds
+Time for counting queries realted rules (just for benchmark): 2  milliseconds
+Total running time of the whole system:                       8956  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               3  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  3  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              4  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       944  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               2  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       849  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               3  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  3  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       835  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               3  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  4  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 4  milliseconds
+Total running time of the whole system:                       841  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               2  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     177  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       1150  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               2  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 5  milliseconds
+Total running time of the whole system:                       892  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               3  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  3  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       853  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               2  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              6  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 2  milliseconds
+Total running time of the whole system:                       859  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               2  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     3  milliseconds
+Time for counting queries realted rules (just for benchmark): 2  milliseconds
+Total running time of the whole system:                       852  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               2  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     32  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       928  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               2  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     3  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       967  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               2  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              7  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 2  milliseconds
+Total running time of the whole system:                       885  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              4  milliseconds
+Time for output answer  :                                     6  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       909  milliseconds
+Warmup: 1 Finished #####################
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       850  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       872  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       848  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              4  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       861  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               2  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 2  milliseconds
+Total running time of the whole system:                       881  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     35  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       879  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 2  milliseconds
+Total running time of the whole system:                       854  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       855  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       853  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     3  milliseconds
+Time for counting queries realted rules (just for benchmark): 2  milliseconds
+Total running time of the whole system:                       857  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              3  milliseconds
+Time for output answer  :                                     26  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       917  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       932  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              0  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       849  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       891  milliseconds
+Warmup: 2 Finished #####################
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       843  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       858  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       871  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       841  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 2  milliseconds
+Total running time of the whole system:                       844  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               4  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  4  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     25  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       909  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 2  milliseconds
+Total running time of the whole system:                       835  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       861  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       841  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              3  milliseconds
+Time for output answer  :                                     6  milliseconds
+Time for counting queries realted rules (just for benchmark): 2  milliseconds
+Total running time of the whole system:                       892  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              7  milliseconds
+Time for output answer  :                                     25  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       902  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              16  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       926  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       852  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     8  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       893  milliseconds
+Warmup: 3 Finished #####################
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       854  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       878  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       865  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       842  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       833  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     20  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       862  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 2  milliseconds
+Total running time of the whole system:                       835  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       862  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       838  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       901  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     26  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       879  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       917  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       832  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       884  milliseconds
+Warmup: 4 Finished #####################
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       836  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       862  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       876  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       832  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              0  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       849  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     30  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       891  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       860  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       858  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       842  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     8  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       865  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     25  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       916  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       919  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       845  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              5  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       873  milliseconds
+Warmup: 5 Finished #####################
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       857  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       848  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       835  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              42  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       839  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       844  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     19  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       880  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       840  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       854  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       852  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       840  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     67  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       916  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       910  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       862  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     6  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       878  milliseconds
+Experiment: 1 #####################
+Ontology file: lubm1_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	1	0	1	1
+q6.sparql	5	1	0	1	1
+q11.sparql	2	1	0	1	1
+q14.sparql	1	0	0	0	2
+q9.sparql	22	0	0	0	1
+q3.sparql	17	0	0	0	2
+q2.sparql	16	0	0	0	2
+q10.sparql	5	0	1	1	1
+q7.sparql	10	1	1	2	1
+q1.sparql	1	1	0	1	1
+q8.sparql	9	1	0	1	1
+q5.sparql	23	0	1	1	1
+q13.sparql	22	1	0	1	2
+q12.sparql	2	1	0	1	42
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       854  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       854  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       834  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       837  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       860  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     53  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       936  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              0  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       836  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       857  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       844  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       847  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     31  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       887  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       923  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       836  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     6  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       932  milliseconds
+Experiment: 2 #####################
+Ontology file: lubm1_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	0	0	0	1
+q6.sparql	5	1	0	1	1
+q11.sparql	2	0	0	0	1
+q14.sparql	1	0	0	0	1
+q9.sparql	22	1	0	1	1
+q3.sparql	17	0	0	0	1
+q2.sparql	16	1	0	1	0
+q10.sparql	5	0	0	0	1
+q7.sparql	10	0	0	0	1
+q1.sparql	1	0	0	0	1
+q8.sparql	9	0	1	1	2
+q5.sparql	23	1	0	1	1
+q13.sparql	22	0	0	0	1
+q12.sparql	2	0	0	0	1
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       863  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       854  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       845  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       845  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       828  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     19  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       897  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       844  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              5  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       892  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              9  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       824  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     8  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       869  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     25  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       878  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       915  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              5  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       846  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       901  milliseconds
+Experiment: 3 #####################
+Ontology file: lubm1_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	1	1	2	9
+q6.sparql	5	0	0	0	1
+q11.sparql	2	1	0	1	1
+q14.sparql	1	1	0	1	1
+q9.sparql	22	0	0	0	1
+q3.sparql	17	0	0	0	5
+q2.sparql	16	0	0	0	2
+q10.sparql	5	1	0	1	1
+q7.sparql	10	0	0	0	1
+q1.sparql	1	0	0	0	2
+q8.sparql	9	0	0	0	5
+q5.sparql	23	1	0	1	1
+q13.sparql	22	1	1	2	1
+q12.sparql	2	1	0	1	1
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       850  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       886  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       840  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       846  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       832  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     19  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       886  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       850  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       849  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       834  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     11  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       856  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     37  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       909  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              8  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       918  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       838  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     3  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       879  milliseconds
+Experiment: 4 #####################
+Ontology file: lubm1_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	1	0	1	2
+q6.sparql	5	0	1	1	1
+q11.sparql	2	1	1	2	1
+q14.sparql	1	0	0	0	1
+q9.sparql	22	0	0	0	1
+q3.sparql	17	0	0	0	1
+q2.sparql	16	0	0	0	1
+q10.sparql	5	1	1	2	1
+q7.sparql	10	1	0	1	8
+q1.sparql	1	1	1	2	1
+q8.sparql	9	1	0	1	2
+q5.sparql	23	0	0	0	1
+q13.sparql	22	0	1	1	1
+q12.sparql	2	0	0	0	1
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       875  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       849  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       831  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       837  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       839  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     19  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       879  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       850  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  2  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       860  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       843  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     8  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       862  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     42  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       914  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       914  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       838  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              0  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       898  milliseconds
+Experiment: 5 #####################
+Ontology file: lubm1_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	1	0	1	2
+q6.sparql	5	1	0	1	1
+q11.sparql	2	1	0	1	1
+q14.sparql	1	0	0	0	1
+q9.sparql	22	0	0	0	0
+q3.sparql	17	1	1	2	1
+q2.sparql	16	0	0	0	1
+q10.sparql	5	0	0	0	1
+q7.sparql	10	0	0	0	2
+q1.sparql	1	0	0	0	2
+q8.sparql	9	0	0	0	1
+q5.sparql	23	1	0	1	2
+q13.sparql	22	1	0	1	2
+q12.sparql	2	0	0	0	1
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       851  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       865  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       837  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       840  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       841  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     19  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       878  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       838  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       870  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              0  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       840  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              0  milliseconds
+Time for output answer  :                                     8  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       859  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     25  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       881  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       927  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       835  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       898  milliseconds
+Experiment: 6 #####################
+Ontology file: lubm1_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	0	0	0	0
+q6.sparql	5	0	0	0	2
+q11.sparql	2	0	0	0	1
+q14.sparql	1	1	0	1	1
+q9.sparql	22	0	0	0	1
+q3.sparql	17	1	0	1	1
+q2.sparql	16	0	1	1	2
+q10.sparql	5	1	0	1	1
+q7.sparql	10	0	1	1	1
+q1.sparql	1	0	0	0	1
+q8.sparql	9	0	0	0	1
+q5.sparql	23	1	0	1	0
+q13.sparql	22	0	0	0	1
+q12.sparql	2	0	0	0	1
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       860  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       867  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              7  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       853  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       856  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       829  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     24  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       877  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       857  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              0  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       861  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       854  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     3  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       842  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     28  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       899  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       908  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       836  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     6  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       902  milliseconds
+Experiment: 7 #####################
+Ontology file: lubm1_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	0	1	1	1
+q6.sparql	5	0	0	0	1
+q11.sparql	2	1	0	1	7
+q14.sparql	1	1	0	1	1
+q9.sparql	22	0	0	0	1
+q3.sparql	17	0	0	0	0
+q2.sparql	16	0	0	0	1
+q10.sparql	5	0	0	0	1
+q7.sparql	10	0	0	0	1
+q1.sparql	1	0	0	0	1
+q8.sparql	9	1	0	1	1
+q5.sparql	23	1	0	1	1
+q13.sparql	22	0	1	1	2
+q12.sparql	2	0	0	0	2
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       840  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       849  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       844  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       840  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       826  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     30  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       884  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       860  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       852  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       847  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              0  milliseconds
+Time for output answer  :                                     8  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       860  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     27  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       905  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       920  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       843  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     5  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       917  milliseconds
+Experiment: 8 #####################
+Ontology file: lubm1_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	0	0	0	1
+q6.sparql	5	0	0	0	1
+q11.sparql	2	0	1	1	1
+q14.sparql	1	0	0	0	1
+q9.sparql	22	0	0	0	2
+q3.sparql	17	0	0	0	2
+q2.sparql	16	0	0	0	1
+q10.sparql	5	0	0	0	1
+q7.sparql	10	0	1	1	1
+q1.sparql	1	1	0	1	1
+q8.sparql	9	0	1	1	1
+q5.sparql	23	0	0	0	0
+q13.sparql	22	1	0	1	2
+q12.sparql	2	0	0	0	1
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       864  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       866  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       835  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       842  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       837  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     19  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       883  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       848  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       858  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       849  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     3  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       849  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     36  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       907  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       913  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       842  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     2  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       883  milliseconds
+Experiment: 9 #####################
+Ontology file: lubm1_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	1	0	1	2
+q6.sparql	5	0	0	0	2
+q11.sparql	2	0	0	0	1
+q14.sparql	1	0	0	0	1
+q9.sparql	22	1	0	1	1
+q3.sparql	17	1	0	1	2
+q2.sparql	16	0	0	0	2
+q10.sparql	5	0	0	0	1
+q7.sparql	10	1	0	1	2
+q1.sparql	1	1	0	1	1
+q8.sparql	9	0	0	0	2
+q5.sparql	23	0	0	0	1
+q13.sparql	22	0	0	0	1
+q12.sparql	2	0	0	0	1
+Rewriting for query: q1.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       838  milliseconds
+Rewriting for query: q10.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       862  milliseconds
+Rewriting for query: q11.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       859  milliseconds
+Rewriting for query: q12.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         1  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 2
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       848  milliseconds
+Rewriting for query: q13.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       845  milliseconds
+Rewriting for query: q14.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 1
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     29  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       872  milliseconds
+Rewriting for query: q2.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 16
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       843  milliseconds
+Rewriting for query: q3.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               1  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  1  milliseconds
+Total rules/rewritten queries: 17
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     0  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       862  milliseconds
+Rewriting for query: q4.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       836  milliseconds
+Rewriting for query: q5.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 23
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     3  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       862  milliseconds
+Rewriting for query: q6.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 5
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     28  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       916  milliseconds
+Rewriting for query: q7.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 10
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       907  milliseconds
+Rewriting for query: q8.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 9
+Time of running datalog program:                              1  milliseconds
+Time for output answer  :                                     1  milliseconds
+Time for counting queries realted rules (just for benchmark): 1  milliseconds
+Total running time of the whole system:                       846  milliseconds
+Rewriting for query: q9.sparql
+found ontology normalization...
+Ontology parsing and normalization time:                      0  milliseconds
+Reasoning time:                                               0  milliseconds
+Query rewriting time:                                         0  milliseconds
+Total time for query rewriting (reasoning + rewriting time):  0  milliseconds
+Total rules/rewritten queries: 22
+Time of running datalog program:                              2  milliseconds
+Time for output answer  :                                     6  milliseconds
+Time for counting queries realted rules (just for benchmark): 0  milliseconds
+Total running time of the whole system:                       891  milliseconds
+Experiment: 10 #####################
+Ontology file: lubm1_ql.owl
+-------------------------------
+query		rw size	reasoning time	rw time	tot rw time	eval time
+q4.sparql	10	0	0	0	1
+q6.sparql	5	0	0	0	1
+q11.sparql	2	0	0	0	1
+q14.sparql	1	1	0	1	2
+q9.sparql	22	0	0	0	2
+q3.sparql	17	1	0	1	1
+q2.sparql	16	0	0	0	1
+q10.sparql	5	0	0	0	1
+q7.sparql	10	0	0	0	1
+q1.sparql	1	0	0	0	1
+q8.sparql	9	0	0	0	1
+q5.sparql	23	0	0	0	1
+q13.sparql	22	0	0	0	1
+q12.sparql	2	0	1	1	1
+
+
+
+Printing Experiment Summary
+query	rw size	tot rw time	eval time
+-----------------------------------------------------
+q4.sparql	10	0.7	2.0
+-----------------------------------------------------
+q6.sparql	5	0.4	1.2
+-----------------------------------------------------
+q11.sparql	2	0.7	1.6
+-----------------------------------------------------
+q14.sparql	1	0.4	1.2
+-----------------------------------------------------
+q9.sparql	22	0.2	1.1
+-----------------------------------------------------
+q3.sparql	17	0.5	1.6
+-----------------------------------------------------
+q2.sparql	16	0.2	1.3
+-----------------------------------------------------
+q10.sparql	5	0.5	1.0
+-----------------------------------------------------
+q7.sparql	10	0.6	1.9
+-----------------------------------------------------
+q1.sparql	1	0.5	1.2
+-----------------------------------------------------
+q8.sparql	9	0.5	1.7
+-----------------------------------------------------
+q5.sparql	23	0.6	0.9
+-----------------------------------------------------
+q13.sparql	22	0.7	1.4
+-----------------------------------------------------
+q12.sparql	2	0.3	5.2
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3 minutes 11 seconds
+[INFO] Finished at: Tue Jul 31 17:33:57 EDT 2012
+[INFO] Final Memory: 39M/856M
+[INFO] ------------------------------------------------------------------------

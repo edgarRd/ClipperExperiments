@@ -107,7 +107,7 @@
 							<!--<argument>/data/lubm/ql/lubm1_ql.owl</argument>
 							<argument>/data/lubm/c_queries</argument>-->
 							<argument></argument>
-							<argument>/data/datalog/lubm1/el</argument>
+							<argument>/data/datalog/v2/lubm10/el</argument>
 						</arguments>
 					</configuration>
 					<dependencies>
